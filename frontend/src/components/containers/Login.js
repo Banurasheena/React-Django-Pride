@@ -26,7 +26,7 @@ class Login extends Component {
             <div className="container">
             <div class="card card-login mx-auto text-center bg-dark">
             <div className="card-header mx-auto bg-dark">
-                <span> <img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Farm_Pride_logo.png " className="w-75" alt="Logo" /></span>
+                <span> <img src="https://www.ingredientsnetwork.com/farmerspride-comp252078.png " className="w-75" alt="Logo" /></span>
                 
         
 
@@ -49,7 +49,7 @@ class Login extends Component {
                 </div>
 
                 <div className="form-group">
-                    <input type="submit" name="btn" value="Login" className="btn btn-outline-danger float-right login_btn" />
+                    <input type="submit" name="btn" value="Login" className="btn btn-outline-success float-right login_btn" />
                 </div>
 
                 </form>
