@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'farm.apps.FarmConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'corsheaders',
-    'farm'
+    
 ]
 
 MIDDLEWARE = [
@@ -129,10 +130,3 @@ CORS_ORIGIN_WHITELIST = (
        'localhost:3000',
 )
 
-# CSRF_COOKIE_NAME = "csrftoken"
-
-# ACCOUNT_UNIQUE_EMAIL = True
-# ACCOUNT_EMAIL_REQUIRED = False
-# ACCOUNT_AUTHENTICATION_METHOD = 'username'
-# ACCOUNT_EMAIL_VERIFICATION = 'none'
-# AUTH_USER_MODEL = 'users.User'

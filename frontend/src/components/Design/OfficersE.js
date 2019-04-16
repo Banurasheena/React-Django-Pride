@@ -5,13 +5,7 @@ class OfficersE extends Component {
   render() {
     return (
       <div>
-        <p>
-          <Link class="mdl-navigation__link" to="/Register">
-            <button type="button" class="btn btn-success btn-lg btn3d">
-              Add Account
-            </button>
-          </Link>
-        </p>
+        <h1>blue</h1>
       </div>
     );
   }

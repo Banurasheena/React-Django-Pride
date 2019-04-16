@@ -5,13 +5,7 @@ class ReportsE extends Component {
   render() {
     return (
       <div>
-        <p>
-          <Link class="mdl-navigation__link" to="/Seasons">
-            <button type="button" class="btn btn-success btn-lg btn3d">
-             Export  CSV
-            </button>
-          </Link>
-        </p>
+        <h1>blue</h1>
       </div>
     );
   }

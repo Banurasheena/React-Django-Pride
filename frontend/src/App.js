@@ -9,8 +9,9 @@ import Login from "./components/containers/Login";
 import Seasons from "./components/containers/Seasons";
 import Addseason from "./components/containers/Addseason";
 import Register from "./components/containers/Register";
-import './App.css';
+
 import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
 
 class App extends Component {
   render() {
@@ -19,9 +20,11 @@ class App extends Component {
         <div className="mdl-layout mdl-js-layout mdl-layout--fixed-header">
           <Header />
           <Switch>
+
+            
             <main className="mdl-layout__content">
-              <Route exact path="/" component={Home} />
-              <Route path="/Login/" component={Login} />
+            
+              <Route path="/" component={Login} />
               <Route path="/Officers" component={Officers} />
               <Route path="/Farmers" component={Farmers} />
               <Route path="/Reports" component={Reports} />

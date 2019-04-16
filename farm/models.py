@@ -4,6 +4,15 @@ from django.contrib.auth.models import User
 
 
 class Farmer(models.Model):
+    GENDER =(
+        ('F','FEMALE'),
+        ('M','MALE'),
+    )
+
+    MARIAGE_STATUS =(
+        ('S','SINGLE'),
+        ('M','MARRIED'),
+    )
 
     user = models.OneToOneField(User, on_delete=models.CASCADE, null=True)
     name = models.CharField('Name', max_length=120, null=True)
@@ -11,9 +20,9 @@ class Farmer(models.Model):
     subcounty_id = models.ForeignKey('subcounty',on_delete=models.CASCADE, null=True)
     Parish = models.CharField('Parish', max_length=120, null=True)
     village = models.CharField('Village',max_length=120, null=True)
-    gender = models.CharField('Gender', max_length=120, null=True)
+    gender = models.CharField('Gender', max_length=120, null=True, choices=GENDER)
     birth_year = models.IntegerField(null=True, blank=True)
-    marriage = models.CharField('Marriage status', max_length=120, null=True)
+    marriage = models.CharField('Marriage status', max_length=120, null=True, choices=MARIAGE_STATUS)
     language = models.CharField('Language', max_length=120, null=True)
     phone = models.CharField('Telephone', max_length=120, null=True)
     photo = models.ImageField(null=True, blank=True, default='no-img.png')
@@ -27,7 +36,7 @@ class Farmer(models.Model):
 
 
     def __str__(self):
-        return self.user
+        return self.name
 
 
 class Harvest(models.Model):

@@ -5,16 +5,13 @@ export default class Header extends Component {
   render() {
     return (
       <Fragment>
-        <header className="must">
-         
-        <div className="card-header mx-auto bg-dark">
-                <span> <img src="https://www.ingredientsnetwork.com/farmerspride-comp252078.png " className="w-75" alt="Logo" /></span>
+        
                 
-                <div className="side">
+        <div className="side">
           <nav className="sider">
-            <Link className="mdl-navigation__link is-active" to="/Login">
+            {/* <Link className="mdl-navigation__link is-active" to="/Login">
               Login
-            </Link>
+            </Link> */}
             <Link className="mdl-navigation__link" to="/Officers">
              Officers
             </Link>
@@ -31,8 +28,7 @@ export default class Header extends Component {
           </nav>
         </div>
 
-            </div>
-        </header>
+            
         
       </Fragment>
     );
